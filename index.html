@@ -1,0 +1,91 @@
+<html>
+    <head>
+            <link rel="stylesheet" type="text/css" href="css/compiled-4.5.16.min.css">
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-light blue lighten-4">
+            <span class="navbar-brand">Heading</span>
+        </nav>
+
+        
+
+        <form class="form-class" action="columname.html" autocomplete="on" >
+                <!-- Default input -->  
+                <div class="form-group col-md-4 mb-3">
+                  <label for="validationCustom01" autocomplete="off">Enter the number of columns:</label>
+                  <input type="text" class="form-control" id="formGroupExampleInputcol" placeholder="Example input"><br>
+                  <label for="validationCustom02" autocomplete="off">Enter the number of rows:</label>
+                  <input type="text" class="form-control" id="formGroupExampleInputrow" placeholder="Example input">
+                  
+                  <input name="form-class1" type="submit" href="" >
+                </div>
+        </form>
+
+        <!-- Footer -->
+      <footer class="page-footer font-small light blue lighten-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+    
+          <!-- Social buttons -->
+          <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+              <a class="btn-floating btn-fb mx-1">
+                <i class="fa fa-facebook"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-tw mx-1">
+                <i class="fa fa-twitter"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-gplus mx-1">
+                <i class="fa fa-google-plus"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-li mx-1">
+                <i class="fa fa-linkedin"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-dribbble mx-1">
+                <i class="fa fa-dribbble"> </i>
+              </a>
+            </li>
+          </ul>
+          <!-- Social buttons -->
+    
+        </div>
+        <!-- Footer Elements -->
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+          <a href="#"> Remember.com</a>
+        </div>
+        <!-- Copyright -->
+    
+      </footer>
+      <!-- Footer -->
+    </body>
+
+    <script>
+    function createTable()
+{
+    var rn=document.getElementById("rn").value;
+    var cn=document.getElementById("cn").value;
+  
+ for(var r=0;r<parseInt(rn);r++)
+  {
+   var x=document.getElementById('myTable').insertRow(r);
+   for(var c=0;c<parseInt(cn);c++)  
+    {
+     var y=  x.insertCell(c);
+     y.innerHTML="Row-"+r+" Column-"+c; 
+    }
+   }
+}
+    </script>
+</html>
